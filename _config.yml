@@ -1,10 +1,12 @@
+# To run Jekyll dev environment locally, run:
+# § bundle exec jekyll serve --baseurl="" --drafts
+
 # Configurations
-title:            Vineyard25 Tech Training
-longtitle:        Vineyard25 Tech Training
-author:           Vineyard25
-email:            hello@vineyard25.org
-description: >
-  Vineyard25 Tech Training Documentation
+title:            ⚙️ V25 Tech Training
+longtitle:        ⚙️ Vineyard25 Tech Training
+author:           nick@vineyard25.org
+email:            nick@vineyard25.org
+description:      Vineyard25 Tech Training Documentation
 
 version:          1.0
 gitbook_version:  3.2.3
@@ -13,18 +15,10 @@ url:              'https://tech.vineyard25.org'
 baseurl:          '/'
 rss:              RSS
 
-# bootstrap: use the remote theme for the site itself
+#  google_analytics: "<YOUR GOOGLE ANALYTICS KEY, e.g, UA-xxxxxx-x>"
+
 remote_theme: sighingnow/jekyll-gitbook
 
-toc:
-  enabled: true
-  h_min:   1
-  h_max:   3
-
-# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/gitbook/images/favicon.ico
-
-# markdown render engine.
 markdown:         kramdown
 kramdown:
   auto_ids:               true
@@ -40,27 +34,19 @@ syntax_highlighter_style: colorful
 
 markdown_ext:             markdown,mkdown,mkdn,mkd,md
 
-# Permalinks
 permalink:                /:categories/:year-:month-:day-:title:output_ext
 
-# Disqus comments
-# disqushandler:            sighingnow
-
-exclude:
-  - _drafts
-
 collections:
-  pages:
+  posts:
     output: true
     permalink: /:collection/:path/
-  others:
+  docs:
     output: true
     permalink: /:collection/:path/
 
 ordered_collections:
   - posts
-  - pages
-  - others
+  - docs
 
 page_width: 800px
 
@@ -72,3 +58,9 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+  - jekyll-target-blank
+
+toc:
+    enabled: true
+    h_min: 1
+    h_max: 2

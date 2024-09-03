@@ -15,6 +15,10 @@ url:              'https://tech.vineyard25.org'
 baseurl:          '/'
 rss:              RSS
 
+github:
+  username:       'vineyard25'
+  repository:     'training'
+
 #  google_analytics: "<YOUR GOOGLE ANALYTICS KEY, e.g, UA-xxxxxx-x>"
 
 remote_theme: sighingnow/jekyll-gitbook

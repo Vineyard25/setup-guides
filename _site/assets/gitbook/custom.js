@@ -27,3 +27,24 @@ if (document.readyState === "loading") {
     bind_footnote_links();
 }
 
+$(".task-list-item-checkbox").removeAttr('disabled')
+
+$(".task-list-item").on("click", function (e) {
+    e.stopPropagation()
+    var $checkbox = $(this).children().first()
+      , $parentList = $(this).parents(".task-list-item")
+
+    $checkbox.prop("checked", !$checkbox.prop("checked"))
+
+    if ($parentList.length) {
+        var listItemsCompleted = 0
+          , $listItems = $parentList.find(".task-list-item-checkbox").slice(1)
+
+        $listItems.each(function (){
+            ($(this).prop("checked")) ? listItemsCompleted++ : null
+        })
+
+        var isListComplete = (listItemsCompleted === $listItems.length)
+        $parentList.children(".task-list-item-checkbox").first().prop("checked", isListComplete)
+    }
+})

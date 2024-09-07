@@ -91,7 +91,7 @@ layout: post
 
 ### Talk
 - [ ] On the [ATEM box](/assets/images/atembuttons.png): Turn key ‘OFF'
-	* Stay on input ‘1’ for the entire talk &emdash; do not show slides
+	* Stay on input ‘1’ for the entire talk &mdash; do not show slides
 
 ### Ministry
 - [ ] Play Spotify playlist “Lo-fi Worship”
@@ -103,7 +103,7 @@ layout: post
 - [ ] Play Spotify playlist “Pre-service”
 - [ ] Pack away everything but the laptop & DI box
 	* This keeps the music running for a nice post-church atmosphere
-- [ ] Around 12:15 &emdash; close all apps & shut down the laptop FULLY (not just on sleep)
+- [ ] Around 12:15 &mdash; close all apps & shut down the laptop FULLY (not just on sleep)
 
 
 

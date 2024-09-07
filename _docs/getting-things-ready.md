@@ -2,6 +2,7 @@
 title: Getting things ready
 author: Vineyard25
 layout: post
+cover: /assets/images/dinosaur.gif
 ---
 
 - [ ] Empty cupboard

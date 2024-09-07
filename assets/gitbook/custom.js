@@ -33,17 +33,21 @@ window.addEventListener('page.change', function (e) {
 
     $(".task-list-item").on("click", function (e) {
         e.stopPropagation()
+
+        // if clicking a link then don't check box
+        if (e.target.nodeName == "A") return
+
         var $checkbox = $(this).children().first()
           , $parentList = $(this).parents(".task-list-item")
           , $checkboxTextSpan = $('<span>').addClass('task-list-item-text').text($(this).text())
+
+        if (e.target.nodeName != "INPUT") $checkbox.prop("checked", !$checkbox.prop("checked"))
 
         $(this).contents().filter(function() {
             return this.nodeType == Node.TEXT_NODE
         }).each(function(){
             this.textContent = this.textContent.replace($checkboxTextSpan)
         })
-
-        $checkbox.prop("checked", !$checkbox.prop("checked"))
 
         if ($parentList.length) {
             var listItemsCompleted = 0

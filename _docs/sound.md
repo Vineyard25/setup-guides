@@ -2,7 +2,6 @@
 title: Sound
 author: Vineyard25
 layout: post
-cover: /assets/images/dinosaur.gif
 ---
 
 ## Setup

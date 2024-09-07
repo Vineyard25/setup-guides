@@ -2,21 +2,54 @@
 title: Getting things ready
 author: Vineyard25
 layout: post
-cover: /assets/images/dinosaur.gif
 ---
 
-- [ ] Empty cupboard
-- [ ] Pull out speakers to create “stage” (use broken carpet line)
-- [ ] Move TVs into position (one left + one right)
-- [ ] Move rolling rack into position (beside stage)
-- [ ] Power cables to left / middle / right
-- [ ] Plug in lights & lay carpet at front
-- [ ] Change batteries in 2 wireless microphones + 5 in-ear packs (AA rechargables)
-- [ ] Check battery levels in 1 preaching mic (9V) + “clicker” (AAA)
-- [ ] Run XLRs to the balcony (on the garden hose & labelled green) 
+> **This section of Tech team should be done together.**
+>
+> Whether you're on Sound or Visuals, get it done ASAP!
+{: .block-tip }
 
-> ##### WHICH TEAM ARE YOU ON TODAY?
+
+## Step 1. Stage
+
+- [ ] Pull out speakers to [create the “stage”](/assets/images/stage-layout-min.jpg) (use the carpet lines for edge)
+- [ ] Move TVs into position
+	* Left one in front of the school cupboard
+	* Right one's legs under the closest desk to stage
+- [ ] Empty the cupboard
+	* Put rolling rack in position (right of stage)
+- [ ] Run power
+	* Extensions to stage left / middle / right
+	* Plug in speakers
+	* Plug in lights at middle
+- [ ] Lay carpets
+	* 1 for worship leader
+	* 1 under the drums
+
+
+## Step 2. Sound
+
+- [ ] Run XLRs to the balcony (on the garden hose & labelled green) 
+- [ ] Change *rechargeable* batteries
+	* wireless Sure microphones
+	* in-ear packs
+- [ ] Check levels of *normal* batteries
+	* preaching mic (9V)
+	* laptop “clicker” (AAA)
+
+
+## Step 3. Screens
+
+- [ ] Plug in AirTame pebble devices
+	* Pebble labelled “big screen” plugs into the switcher *inside* the school cupboard
+	* Other pebble plugs into the TV on the right
+- [ ] Turn on TVs and check AirTame screen appears
+
+
+## Step 4. Which role are you on today?
+
+> **[Sound &rarr;](/docs/sound)**
 >
-> **[I'm on Sound &rarr;](/docs/sound)**
+> or
 >
-> **[I'm on Screens &rarr;](/docs/screens)**
+> **[Visuals &rarr;](/docs/visuals)**

@@ -343,7 +343,6 @@ pre:has(code.language-mermaid[data-processed="true"]) {
     --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-
 .markdown-section .task-list {
     padding-left: 1em ;
 }
@@ -352,8 +351,17 @@ pre:has(code.language-mermaid[data-processed="true"]) {
     list-style: none;
     cursor: pointer;
     padding: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+.markdown-section .task-list-item li:not(.task-list-item) {
+    font-weight: normal;
 }
 
 .markdown-section .task-list-item:hover .task-list-item-checkbox:first-child {
     opacity: 0.9;
+}
+
+.navigation {
+    position: fixed;
 }

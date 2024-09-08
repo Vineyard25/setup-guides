@@ -349,12 +349,14 @@ pre:has(code.language-mermaid[data-processed="true"]) {
 .markdown-section .task-list-item {
     list-style: none;
     cursor: pointer;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 10px 2em;
+    position: relative;
     font-weight: bold;
 }
 
 .markdown-section .task-list-item-checkbox {
-    margin-right: 2em;
+    position: absolute;
+    left: 0;
 }
 
 .markdown-section .task-list-item li:not(.task-list-item) {

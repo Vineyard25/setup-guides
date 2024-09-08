@@ -364,7 +364,3 @@ pre:has(code.language-mermaid[data-processed="true"]) {
 .markdown-section .task-list-item:hover .task-list-item-checkbox:first-child {
     opacity: 0.9;
 }
-
-.navigation {
-    position: fixed;
-}

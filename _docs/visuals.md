@@ -58,26 +58,28 @@ layout: post
 	- [ ] For each song in the worship set, [press `Ctrl + F` &rarr; type the song name](/assets/images/addsong2.png) &rarr; drag it to the service playlist on the left
 
 
-### Live Stream
+### Livestream - Youtube
 > If set up correctly, the live stream will go live to viewers @ 10:45am
 
 - [ ] [Open YouTube Studio](http://studio.youtube.com){:target="_blank"}
-- [ ] Check you're logged into the `Vineyard25` account by clicking the top-right Menu &rarr; Switch accounts &rarr; Vineyard 25
-- [ ] Top-right menu: `Create` -> `Go Live`
+	- [ ] Check you're logged into the `Vineyard25` account: [top-right menu &rarr; `Switch accounts` &rarr; `Vineyard 25`](/assets/images/youtube-login.png)
+- [ ] [Top-right menu: `Create` &rarr; `Go Live`](/assets/images/youtube-golive.png)
 	* Issue: If there is a table with any “upcoming” videos, delete them before continuing
-- [ ] From the left menu bar click the top icon `Stream`
+- [ ] From the [left menu bar click the top icon `Stream`](/assets/images/youtube-stream-panel.png)
 - [ ] On the [ATEM box](/assets/images/atembuttons.png): Turn from 'OFF' to ‘ON AIR' (it should highlight red)
-- [ ] Once it starts streaming click `Edit`
+- [ ] Once it starts streaming [click `Edit`](/assets/images/youtube-stream2.png)
 	* Title = “Vineyard25 Service + the date”
 	* Description = Delete
 	* Visibility = Unlisted
 	* Click Save
-- [ ] Click share button in top-right and copy the link (we will use it in the next stage)
+- [ ] Click [share button in top-right](/assets/images/youtube-stream3.png) and copy the link (we will use it in the next stage)
 
-- [ ] [Open our LiveStream Admin](https://live.wokinghamvineyard.org/admin/services){:target="_blank"}
-	* Find today's date &rarr; “Edit content”
-	- [ ] Scroll down and paste the link into “Video &rarr; URL” (NOT into ‘Embed Code’)
-	- [ ] Scroll down and click save
+### Livestream - Platform
+- [ ] [Open our LiveStream Platform](https://live.wokinghamvineyard.org/admin/services){:target="_blank"}
+	* If not logged in, [click the menu in top-left](/assets/images/livestream-login.png) &rarr; `Login`
+	- [ ] From the left-hand menu [click `SERVICES` then `Edit content` on today's date](/assets/images/livestream-services.png)
+	- [ ] Scroll down and [paste the link into `Video` &rarr; `URL`](/assets/images/livestream-url.png) (NOT into ‘Embed Code’)
+	- [ ] Scroll down and [click `Deselect all` then click `save`](/assets/images/livestream-save.png)
 
 
 

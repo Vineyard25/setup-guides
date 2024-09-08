@@ -174,11 +174,9 @@
   .task-list-item [type=checkbox]:before {
     content: "";
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     height: 1.6em;
     width: 1.6em;
-    margin-right: 0.6em;
-    margin-top: -0.3em;
     color: rgba(0, 0, 0, 0.275);
     border: solid 0.06em;
     box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;

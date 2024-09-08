@@ -178,6 +178,7 @@
     height: 1.6em;
     width: 1.6em;
     margin-right: 0.6em;
+    margin-top: -0.3em;
     color: rgba(0, 0, 0, 0.275);
     border: solid 0.06em;
     box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;
@@ -344,7 +345,7 @@ pre:has(code.language-mermaid[data-processed="true"]) {
 }
 
 .markdown-section .task-list {
-    padding-left: 1em ;
+    padding-left: 1em;
 }
 
 .markdown-section .task-list-item {
@@ -352,6 +353,10 @@ pre:has(code.language-mermaid[data-processed="true"]) {
     cursor: pointer;
     padding: 10px 0 10px 0;
     font-weight: bold;
+}
+
+.markdown-section .task-list-item-checkbox {
+    margin-right: 2em;
 }
 
 .markdown-section .task-list-item li:not(.task-list-item) {

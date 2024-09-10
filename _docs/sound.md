@@ -4,21 +4,23 @@ author: Vineyard25
 layout: post
 ---
 
-## Setup
-- [ ] Check worship rota for band list
-- [ ] Put microphone stands out
-- [ ] Run XLR cables for band members
+## 1. Before church
 
-## Line check
+### Line check [09:30]
 - [ ] XYZ
 
-## Sound check
+
+### Sound check [10:00]
 - [ ] XYZ
 
-## During the service
+
+## 2. During church
+
+### During the service [10:55]
 - [ ] XYZ
 
-## After the service
+
+## 3. After church
 - [ ] XYZ
 
 

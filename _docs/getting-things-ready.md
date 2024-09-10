@@ -4,20 +4,23 @@ author: Vineyard25
 layout: post
 ---
 
-> **This section of Tech team should be done together.**
+> **Do this bit together!**
 >
-> Whether you're on Sound or Visuals, get it done ASAP!
+> Whether you're on Sound or Visuals, work together and get it done ASAP ☺️
 {: .block-tip }
 
 
-## Step 1. Stage
+## [08:30] Stage
 
-- [ ] Pull out speakers to [create the “stage”](/assets/images/stage-layout-min.jpg) (use the carpet lines for edge)
+- [ ] Pull out speakers to create the stage [(full stage example)](/assets/images/stage-layout-min.jpg)
+	* Use the carpet and wall lines for the stage's "edge"
+	* The TV is the centre-point of the stage
+	- [ ] Make sure the speakers are properly configured ([top](/assets/images/speaker-settings-top.jpg) &#124; [bottom](/assets/images/speaker-settings-bottom.jpg))
 - [ ] Move TVs into position
 	* Left one in front of the school cupboard
 	* Right one's legs under the closest desk to stage
-- [ ] Empty the cupboard
-	* Put rolling rack in position (right of stage)
+- [ ] Empty the cupboard ([full](/assets/images/cupboard-full.jpg) &#124; [empty](/assets/images/cupboard-empty.jpg))
+- [ ] Move rolling rack into position ([back](/assets/images/rolling-rack-cable-inputs.jpg) &#124; [front](/assets/images/rolling-rack.jpg))
 - [ ] Run power
 	* Extensions to stage left / middle / right
 	* Plug in speakers
@@ -27,9 +30,23 @@ layout: post
 	* 1 under the drums
 
 
-## Step 2. Sound
+## [08:50] Screens
 
-- [ ] Run XLRs to the balcony (on the garden hose & labelled green) 
+- [ ] Plug in AirTame pebble devices
+	* Pebble labelled "Big screen” plugs into the switcher *inside* the school cupboard [(see image)](/assets/images/hdmi-switcher.jpg)
+	* "Big screen" pebble gets its power from the TV [(see image)](/assets/images/airtame-screen-1.jpg)
+	* Other pebble plugs into the TV on the right [(see image)](/assets/images/airtame-screen-2.jpg)
+- [ ] Turn on TVs and check AirTame screen appears [(see image)](/assets/images/airtame-launch-screen.jpg)
+
+
+## [09:00] Sound
+
+- [ ] Run XLRs to the balcony (on the garden hose & labelled green)
+	* Cover cables across kids & youth doorways with [velcro cable covers](/assets/images/velcro-strips.jpg)
+- [ ] Plug in batteries (inside the top of the rolling rack) so they charge while you're setting up
+- [ ] [Check ChurchSuite rota](https://vineyard25.churchsuite.com/my/rotas/all) to find out who's on the band
+- [ ] Put microphone stands out
+- [ ] Run XLR cables & DI Boxes ([dual](/assets/images/di-settings-dual.jpg) &#124; [mono - input side](/assets/images/di-settings-mono-1.jpg) &#124; [mono - output side](/assets/images/di-settings-mono-2.jpg))
 - [ ] Change *rechargeable* batteries
 	* wireless Sure microphones
 	* in-ear packs
@@ -38,15 +55,18 @@ layout: post
 	* laptop “clicker” (AAA)
 
 
-## Step 3. Screens
-
-- [ ] Plug in AirTame pebble devices
-	* Pebble labelled “big screen” plugs into the switcher *inside* the school cupboard
-	* Other pebble plugs into the TV on the right
-- [ ] Turn on TVs and check AirTame screen appears
 
 
-## Step 4. Which role are you on today?
+
+
+
+
+
+
+
+
+
+## Which role are you on today?
 
 > **[Sound &rarr;](/docs/sound)**
 >

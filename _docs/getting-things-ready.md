@@ -13,9 +13,9 @@ layout: post
 ## [08:30] Stage
 
 - [ ] Pull out speakers to create the stage [(full stage example)](/assets/images/stage-layout-min.jpg)
-	* Use the carpet and wall lines for the stage's "edge"
-	* The TV is the centre-point of the stage
-	- [ ] Make sure the speakers are properly configured ([top](/assets/images/speaker-settings-top.jpg) &#124; [bottom](/assets/images/speaker-settings-bottom.jpg))
+	* Use the carpet marks to show the stage front
+	* Make the wall TV the centre-point of the stage
+- [ ] Make sure the speakers are properly configured ([top](/assets/images/speaker-settings-top.jpg) &#124; [bottom](/assets/images/speaker-settings-bottom.jpg))
 - [ ] Move TVs into position
 	* Left one in front of the school cupboard
 	* Right one's legs under the closest desk to stage
@@ -48,7 +48,7 @@ layout: post
 - [ ] Put microphone stands out
 - [ ] Run XLR cables & DI Boxes ([dual](/assets/images/di-settings-dual.jpg) &#124; [mono - input side](/assets/images/di-settings-mono-1.jpg) &#124; [mono - output side](/assets/images/di-settings-mono-2.jpg))
 - [ ] Change *rechargeable* batteries
-	* wireless Sure microphones
+	* wireless Shure microphones
 	* in-ear packs
 - [ ] Check levels of *normal* batteries
 	* preaching mic (9V)

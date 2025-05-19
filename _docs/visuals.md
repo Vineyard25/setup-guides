@@ -4,117 +4,98 @@ author: Vineyard25
 layout: post
 ---
 
-## 1. Before church
+## 🖥️ Setup: Before Church
 
-### [09:30] Balcony
-- [ ] Take boxes upstairs & put table/chairs out
-- [ ] Plug in classroom cables
-	* Long ethernet cable - replace the school computer's ethernet port
-	* Power extension - behind the classroom door
-- [ ] Setup the camera slightly off-centre
-- [ ] Put [gear onto tables](/assets/images/balcony-desk-min.jpg)
-	* ATEM box
-	* Monitor
-	* DI box - plug in long cables from stage
-	* Laptop
-- [ ] Connect everything to the box as labelled
-- [ ] Plug cables into laptop (power + ethernet + USB-C dongle + HDMI dongle + audio cable)
+### 🎬 Screens
 
+- [ ] Plug in AirTame pebbles:
+  - "Big Screen" pebble
+      - HDMI into cupboard [HDMI switcher](/assets/images/hdmi-switcher.jpg)
+      - Power from laptop USB
+  - Non-labeled pebble
+      - USB and HDMI into the [side screen](/assets/images/airtame-sidescreen.jpg)
+- [ ] Turn on TVs and check [AirTame launch screen](/assets/images/airtame-launch-screen.jpg) appears
 
-### [09:45] Screens
-> Don't get frustrated by this section - just repeat the steps if things don't go well.
-> If nothing works then pray, restart the laptop and start again!
+---
 
-- [ ] Wi-fi: connect “V25 Screens”
-- [ ] App: [AirTame](/assets/images/airtamelogo.jpg) &rarr; connect to both screens
-- [ ] Right-click the desktop and [click Display Settings](/assets/images/desktop-right-click.jpg)
-- [ ] [Click ‘identify’](/assets/images/identifydisplay.jpg)
-	* You want [different numbers to show on the big screen + ATEM Monitor](/assets/images/atemscreen3.jpg)
-	* The number 1 should also show on the laptop screen itself
-	* Issue: If 1 + 2 + 3 are not shown then swap the HDMIs and try again
-- [ ] On the [ATEM box](/assets/images/atembuttons.png): Turn key ‘OFF’ and change to input ‘2’
+### 🧰 Balcony Setup
 
+- [ ] Plug in:
+  - Ethernet (replaces school PC connection)
+  - Power extension (behind door)
+- [ ] [Set up balcony](/assets/images/balcony-desk.jpg)
+	- Put desks into L-shape
+	- Carry rack from classroom cupboard onto desk (point antenna toward stage)
+	- Set up monitor, laptop and camera
+	- plug everything into the balcony rack
+- [ ] Run cable downstairs to the mixing rack
 
-### [10:00] ProPresenter - Setup
-- [ ] Open App: [ProPresenter](/assets/images/propresenter.png) 
-	* It can take a while to load, don't be alarmed!
-	- [ ] Click [Screens &rarr; Configure Screens...](/assets/images/configscreens.png)
-	- [ ] Click on 'Screen' then [change the output](/assets/images/screensetup.png)
-		* Click 'Identify' if you want to double-check
-	- [ ] Do the above again for 'Atem'
+---
 
+### 🖥️ Displays & ATEM
 
-### [10:10] ProPresenter - Content
-- [ ] Open App: OneDrive
-- [ ] Copy teacher's PowerPoint slides to downloads (we don't need to keep them)
-	- [ ] Check if the slides are on OneDrive by opening folder: [`Vineyard25 / Everyone – General / WV Shared Files`](C:/)
-		* You may need to open the OneDrive app
-		* If they are not there or you can't get in, get them from the teacher's USB instead
-	- [ ] Import the powerpoint file into ProPresenter [File > Import > Powerpoint](/assets/images/importslides.png)
-	- [ ] [press `Ctrl + F` &rarr; start typing the file name](/assets/images/addsong2.png) you just copied &rarr; drag it into the service playlist on the left
-- [ ] Confirm the set list with the worship leader
-	- [ ] For each song in the worship set, [press `Ctrl + F` &rarr; type the song name](/assets/images/addsong2.png) &rarr; drag it to the service playlist on the left
+> 💡 If it doesn’t work: restart the laptop and try again.
 
+- [ ] Connect to Wi-Fi: `V25 Screens`
+- [ ] Open [AirTame app](/assets/images/airtamelogo.jpg) → connect both screens
+- [ ] Right-click desktop → open [Display Settings](/assets/images/desktop-right-click.jpg)
+  - Click [Identify](/assets/images/identifydisplay.jpg)
+  - Each screen should show a unique number (e.g. like [this](/assets/images/atemscreen3.jpg))
+  - If not: swap HDMI cables and retry
+- [ ] On [ATEM box](/assets/images/atembuttons.png): key = **OFF**, input = `2`
 
-### [10:20] Livestream - Youtube
-> If set up correctly, the live stream will go live to viewers @ 10:45am
+---
 
-- [ ] Open YouTube Studio ([http://studio.youtube.com](http://studio.youtube.com){:target="_blank"})
-	- [ ] Check you're logged into the `Vineyard25` account: [top-right menu &rarr; `Switch accounts` &rarr; `Vineyard 25`](/assets/images/youtube-login.png)
-- [ ] [Top-right menu: `Create` &rarr; `Go Live`](/assets/images/youtube-golive.png)
-	* Issue: If there is a table with any “upcoming” videos, delete them before continuing
-- [ ] From the [left menu bar click the top icon `Stream`](/assets/images/youtube-stream-panel.png)
-- [ ] On the [ATEM box](/assets/images/atembuttons.png): Turn from 'OFF' to ‘ON AIR' (it should highlight red)
-- [ ] Once it starts streaming [click `Edit`](/assets/images/youtube-stream2.png)
-	* Set 'Title' to `Vineyard25 Service` + `(today's date)`
-	* Leave 'Description' blank
-	* Set 'Visibility' dropdown to `Unlisted`
-	* Click Save
-- [ ] Click [share button in top-right](/assets/images/youtube-stream3.png) and copy the link (we will use it in the next stage)
+### 🎛️ ProPresenter
 
+- [ ] Open [ProPresenter](/assets/images/propresenter.png)
+- [ ] Go to `Screens → Configure Screens` ([config image](/assets/images/configscreens.png))
+- [ ] Select ‘Screen’ and ‘Atem’ → change [output settings](/assets/images/screensetup.png)
 
-### [10:25] Livestream - Platform
-- [ ] Open the LiveStream Admin ([https://live.wokinghamvineyard.org/admin/services](https://live.wokinghamvineyard.org/admin/services){:target="_blank"})
-	* If not logged in, [click the menu in top-left](/assets/images/livestream-login.png) &rarr; `Login`
-	- [ ] From the left-hand menu [click `SERVICES` then `Edit content` on today's date](/assets/images/livestream-services.png)
-	- [ ] Scroll down and [paste the link into `Video` &rarr; `URL`](/assets/images/livestream-url.png) (NOT into ‘Embed Code’)
-	- [ ] Scroll down and [click `Deselect all` then click `save`](/assets/images/livestream-save.png)
+---
 
+### 📝 Slides & Worship Set
 
-### [10:45] Audio
-- [ ] Play Spotify playlist “Pre-service”
+- [ ] Get teacher’s PowerPoint (OneDrive or USB)
+- [ ] In ProPresenter:
+  - `File → Import → PowerPoint` ([import help](/assets/images/importslides.png))
+  - Use `Ctrl + F` to search and drag into playlist ([example](/assets/images/addsong2.png))
+- [ ] Confirm worship set with worship leader:
+  - Search each song and add to playlist
 
+---
 
-## 2. During church
+### 📡 Livestream: YouTube
 
-### [11:00] Notices
-- [ ] Pause Spotify (after sound person fades it out)
+- [ ] Go to [YouTube Studio](http://studio.youtube.com)
+  - Confirm you’re logged into the [Vineyard25 account](/assets/images/youtube-login.png)
+- [ ] `Create → Go Live` ([screen reference](/assets/images/youtube-golive.png))
+  - Delete any “upcoming” videos
+- [ ] Click `Stream` in side menu ([panel image](/assets/images/youtube-stream-panel.png))
+- [ ] On [ATEM box](/assets/images/atembuttons.png): switch to `ON AIR` (red light)
+- [ ] Click `Edit` ([edit screen](/assets/images/youtube-stream2.png))
+  - Title: `Vineyard25 Service (today’s date)`
+  - Visibility: `Unlisted`, leave description blank
+- [ ] Click [Share](/assets/images/youtube-stream3.png) and copy the link
 
-### [11:05] Worship
-- [ ] On the [ATEM box](/assets/images/atembuttons.png): Turn key ‘ON' and change to input ‘1’
+---
 
-### [11:25] Talk
-- [ ] On the [ATEM box](/assets/images/atembuttons.png): Turn key ‘OFF'
-	* Stay on input ‘1’ for the entire talk &mdash; do not show slides
+### 🖥️ Livestream: Church Platform
 
-### [11:50] Ministry
-- [ ] Play Spotify playlist “Lo-fi Worship”
-- [ ] On the [ATEM box](/assets/images/atembuttons.png): Turn from ‘ON AIR' to 'OFF' 
+- [ ] Go to [LiveStream Admin](https://live.wokinghamvineyard.org/admin/services)
+  - [Log in if needed](/assets/images/livestream-login.png)
+- [ ] Click `Edit content` for today’s service ([example](/assets/images/livestream-services.png))
+- [ ] Paste the YouTube link in the `Video → URL` field ([where to paste](/assets/images/livestream-url.png))
+- [ ] Scroll down → click `Deselect all` → click [Save](/assets/images/livestream-save.png)
 
+---
 
+## 🙌 During Church
 
-## 3. After church
+- [ ] **Before worship**: On [ATEM box](/assets/images/atembuttons.png), key = `ON`, input = `1`
+- [ ] **For talk**: turn key `OFF` — stay on input `1` (no slides)
+- [ ] **For ministry**: turn `ON AIR → OFF`
 
-### [12:00]
-- [ ] Play Spotify playlist “Pre-service”
-- [ ] Pack away everything but the laptop & DI box
-	* This keeps the music running for a nice post-church atmosphere
+---
 
-### [12:15]
-- [ ] Switch to music via your phone / Bluetooth adaptor
-- [ ] Shut down the laptop FULLY
-	* Close apps and don't just put it to sleep
-
-
-
-> **[&larr; Back home](/)**
+[← Back home](/)

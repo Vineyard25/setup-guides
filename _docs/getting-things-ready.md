@@ -11,7 +11,7 @@ Whether you're on Sound or Visuals, **work as a team** to get it done quickly!
 ---
 
 ## 🎤 Step 1: Set Up the Stage
-> [Click to view fully set-up stage](/assets/images/stage_setup.jpg)
+> ![Fully set-up stage](/assets/images/stage_setup.jpg)
 
 - [ ] Move speakers [into position](/assets/images/stage_empty.jpg)
 - [ ] Check speaker settings:
@@ -25,6 +25,7 @@ Whether you're on Sound or Visuals, **work as a team** to get it done quickly!
 	- Stage left, middle & right
 	- Side screen
 - [ ] Plug in speakers
+  - At this point you can connect to the Bluetooth (Logitech Adapter) to play some uplifting/energetic music
 - [ ] Lay down carpets
 - [ ] [Check the rota](https://vineyard25.churchsuite.com/my/rotas/all) to see who's on the band
 - [ ] Run cables + DI boxes for all instruments and mics

@@ -4,6 +4,13 @@ author: Vineyard25
 layout: post
 ---
 
+## 🎯 Your Priorities
+
+✅ **Enable different congregations** — whether in the room, watching live or watching on replay  
+✅ **Minimise distractions** — create a smooth worship experience
+
+---
+
 ## 🖥️ Setup: Before Church
 
 ### 🎬 Screens
@@ -19,11 +26,12 @@ layout: post
 ---
 
 ### 🧰 Balcony Setup
+> ![Balcony all set up](/assets/images/balcony_desk.jpg)
 
 - [ ] Plug in:
   - Ethernet (replaces school PC connection)
   - Power extension (behind door)
-- [ ] [Set up balcony](/assets/images/balcony-desk.jpg)
+- [ ] Set up balcony
 	- Put desks into L-shape
 	- Carry rack from classroom cupboard onto desk (point antenna toward stage)
 	- Set up monitor, laptop and camera
@@ -36,7 +44,8 @@ layout: post
 
 > 💡 If it doesn’t work: restart the laptop and try again.
 
-- [ ] Connect to Wi-Fi: `V25 Screens`
+- [ ] Turn on the laptop and connect to Wi-Fi: `V25 Screens`
+  - Note: you should have *both* ethernet (for internet) and Wi-Fi (to connect to the screens) active
 - [ ] Open [AirTame app](/assets/images/airtamelogo.jpg) → connect both screens
 - [ ] Right-click desktop → open [Display Settings](/assets/images/desktop-right-click.jpg)
   - Click [Identify](/assets/images/identifydisplay.jpg)

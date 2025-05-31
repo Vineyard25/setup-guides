@@ -44,6 +44,16 @@ layout: post
 
 > ⚠️ **Warning:** Changing gain or EQ will affect in-ears. Always warn the band first.
 
+
+---
+
+## 🎛️ Step 4: During the service
+
+- [ ] Connect to the bluetooth and play the [Pre-service Playlist on Spotify](https://open.spotify.com/playlist/6eFHoqPnNc89xkq8eM78Bj?si=982df845c1184576)
+- [ ] At 10:55 be ready for the kids church announcement
+- [ ] At 11:00 gradually fade out the music when the host is ready
+- [ ] After the talk, gradually fade in (quietly!) a calm, without-vocals worship playlist [like this one](https://open.spotify.com/playlist/7dqiLIfuehHZvHQdHoHEaF?si=KRahHrFIRtqxoYzP1GUZFg)
+
 ---
 
 [← Back home](/)

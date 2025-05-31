@@ -99,6 +99,15 @@ layout: post
 
 ---
 
+### 🖥️ Creche (Downstairs)
+
+- [ ] Setup the speaker in the corner and plug it into a PC
+- [ ] Login to PC using the details pinned in the Tech WhatsApp chat
+- [ ] Go to [YouTube Studio](http://studio.youtube.com) → Find the livestream and open it
+  - We have to use YouTube rather than the Live Church Platform
+
+---
+
 ## 🙌 During Church
 
 - [ ] **Before worship**: On [ATEM box](/assets/images/atembuttons.png), key = `ON`, input = `1`

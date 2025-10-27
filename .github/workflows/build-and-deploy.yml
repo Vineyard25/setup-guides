@@ -36,6 +36,7 @@ jobs:
           mkdir -p dist
           npm run build
           cp tasks.md dist/tasks.md
+          cp -r assets dist/assets
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

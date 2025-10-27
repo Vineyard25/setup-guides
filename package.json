@@ -9,15 +9,20 @@
     "inject-js": "sed '/<script type=\"text\\/babel\">/,/<\\/script>/d' dist/index.html | sed 's|</body>|  <script src=\"./app.js\"></script>\\n</body>|' > dist/index.tmp && mv dist/index.tmp dist/index.html",
     "minify": "npx html-minifier-terser dist/index.html -o dist/index.html --collapse-whitespace --remove-comments --minify-js true --minify-css true",
     "build": "npm run build:css && npm run replace-cdn && npm run extract-jsx && npm run build:babel && npm run inject-js && npm run minify",
-
-    "dev": "npx live-server --watch=index.html,tasks.md,tailwind.config.js"
+    "minify:images": "node scripts/minify-images.mjs",
+    "dev": "npx live-server --watch=index.html,tasks.md"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
+    "globby": "^15.0.0",
     "html-minifier-terser": "^7.2.0",
+    "imagemin": "^9.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
     "live-server": "^1.2.2",
+    "sharp": "^0.34.4",
     "tailwindcss": "^3.4.0"
   }
 }

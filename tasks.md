@@ -1,72 +1,73 @@
 # 🤝 Joint Setup
-**Time: 15 min** | **Role: both**
+**Time: 08:45-09:00** | **Role: both**
 
 > Work together on these tasks - Sound and Visuals should complete it as a team.
 
-## Set Up the Stage
+## Setting up the stage
+**Time: 15 mins**
 
-- [ ] Move speakers [into position](https://tech.vineyard25.org/assets/stage_empty.jpg)
-- [ ] Check speaker settings
-  - [ ] Top speaker
-  - [ ] Bottom speaker
+- [ ] Check the [rota](https://vineyard25.churchsuite.com/my/rotas/all) together
 - [ ] Move TVs into place
-- [ ] Empty cupboard & roll mixing rack into position
-- [ ] Run power extensions
-  - [ ] Mixing rack
-  - [ ] Speakers
-  - [ ] Stage left, middle & right
-  - [ ] Side screen
-- [ ] Plug in speakers
-- [ ] Connect Bluetooth (Logitech Adapter) for uplifting/energetic music
-- [ ] Lay down carpets
-
-## Band Setup
-
-- [ ] Check the [rota for band members](https://vineyard25.churchsuite.com/my/rotas/all)
+- [ ] Pull out speakers to form "stage" corners
+- [ ] Check speaker settings (top and bottom)
+- [ ] Empty cupboard
+- [ ] Lay out both rugs (drums + worship leader)
+- [ ] Run power extension cables
 - [ ] Run cables + DI boxes for all instruments and mics
-- [ ] Set out stands
-  - [ ] Guitar stand
-  - [ ] Mic stands
-  - [ ] Laptop stand
-- [ ] Check battery levels & place gear on side laptop stand
-  - [ ] Wireless microphones
-  - [ ] Preaching mic
-  - [ ] In-ear packs
-  - [ ] Laptop clicker
+- [ ] Set up microphone stands
+- [ ] Set up preaching stand
 
 ---
 
 # 🎵 Sound Setup
-**Time: 20 min** | **Role: sound**
+**Time: 09:00 - 09:45** | **Role: sound**
 
 > **Your Priorities:**
 > - Protect hearing – be ready to mute at any moment
 > - Minimise distractions – create a smooth worship experience
 
+## Getting started
+**Time: 5 mins**
+- [ ] Check/change batteries & put gear on a laptop stand
+  - [ ] Microphones (2x vocals, 1x host)
+  - [ ] Preaching headset
+  - [ ] Laptop clicker
+  - [ ] In-ear packs (5x)
+     
 ## Line Check
-**Time: 10 min**
+**Time: 15 mins**
 
-- [ ] Load the "Reset" preset
-- [ ] Tell band not to put in-ears in yet
-- [ ] For each instrument: un-mute, check signal, adjust gain
-  > *Red = too high. If no signal: check mute groups, cables, DI boxes, instrument signal, EQ*
+> Line check is not about getting sound out of the main speakers and making it sound good; it's simply about ensuring you are getting signal into every channel correctly, and at the right level.
+
+- [ ] Remind band to not put IEMs in until after line check is complete
+  > This is because you're changing channel gains, which will affect what goes to the IEMs
+- [ ] Load preset "Reset"
+- [ ] Set gain for each instrument
+  - [ ] Un-mute each channel
+  - [ ] Adjust gain so it's in the low-orange (red is too high, green is ok too)
+  > If there's limited/no signal, check the following: the instrument is producing signal, cables from instrument through to box all OK, DI boxes have power and are not reducing gain, channel mute isn't active, a high gate has not been added by accident.
 
 ## Sound Check
+**Time: 25 mins**
 
+> Now comes the fun part! Sound check is where your job is to "make them sound good" out of the main speakers.
+
+- [ ] Grab a microphone so you can talk to the band, and ensure it is being sent to all in-ears
+- [ ] Tell the band it's now okay to put in their in-ears
 - [ ] Un-mute DCAs (last iPad tab) and set to 0dB
 - [ ] Un-mute Master (penultimate tab) and set to 0dB
 - [ ] Go through each band member
   - [ ] Volume – bring up main fader
-  - [ ] EQ – reduce frequencies (don't boost)
-- [ ] Tell band they can now put in their in-ears
-  > ⚠️ **Warning:** Changing gain/EQ affects in-ears - warn band first!
+  - [ ] EQ – make it sound good by reduction of frequencies (not by boosting them)
+    > ⚠️ Changing gain/EQ affects in-ears - warn band before making significant changes!
 
-## During Service
-
-- [ ] Connect Bluetooth & play [Pre-service Playlist](https://open.spotify.com/playlist/6eFHoqPnNc89xkq8eM78Bj)
-- [ ] 10:55 - Be ready for kids church announcement
-- [ ] 11:00 - Gradually fade out music when host is ready
-- [ ] After talk - Fade in [calm, no-vocals worship playlist](https://open.spotify.com/playlist/7dqiLIfuehHZvHQdHoHEaF)
+## Getting ready for the service
+- [ ] Play the [Pre-service Playlist](https://open.spotify.com/playlist/6eFHoqPnNc89xkq8eM78Bj) either on your mobile (bluetooth) or via the laptop (ask the visuals person)
+- [ ] 10:45 - Make sure the preacher has their microphone setup properly and knows how to use it (power + mute)
+- [ ] 10:55 - Be ready for announcements via host microphone (slightly quieten music behind)
+- [ ] 11:00 - Gradually fade the music out when host starts opening
+- [ ] After talk - Fade in a quiet a [no-vocals worship playlist](https://open.spotify.com/playlist/7dqiLIfuehHZvHQdHoHEaF)
+- [ ] After ministry - Play either our "pre-service" or "core songs" playlists
 
 ---
 
@@ -77,15 +78,17 @@
 > - Enable different congregations – in room, live stream, replay
 > - Minimise distractions – create smooth worship experience
 
-## Screens
-
+## Getting started
+- [ ] Play some upbeat music for setup teams
+  - [ ] Connect to Bluetooth (Logitech Adapter)
+  - [ ] Play whatever you like. Take requests. Have fun!
 - [ ] Plug in AirTame pebbles
   - [ ] "Big Screen" pebble - HDMI into cupboard [switcher](https://tech.vineyard25.org/assets/hdmi-switcher.jpg) + USB power
   - [ ] Non-labeled pebble - USB & HDMI into [side screen](https://tech.vineyard25.org/assets/airtame-sidescreen.jpg)
 - [ ] Turn on TVs and check [AirTame launch screen](https://tech.vineyard25.org/assets/airtame-launch-screen.jpg) appears
 
 ## Balcony Setup
-
+- [ ] Carry the gear upstairs (screen, cable box)
 - [ ] Plug in balcony equipment
   - [ ] Ethernet (replaces school PC connection)
   - [ ] Power extension (behind door)

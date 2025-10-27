@@ -4,10 +4,14 @@
   "scripts": {
     "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css --minify",
     "replace-cdn": "sed '/cdn.tailwindcss.com/d' index.html | sed '/@babel\\/standalone/d' | sed -E 's|<script[^>]*type=\"module\"[^>]*>.*?</script>||g' | sed 's|</head>|  <link rel=\"stylesheet\" href=\"./tailwind.css\" />\\n</head>|' > dist/index.html",
+    "build:babel": "npx babel dist/index.html --out-file dist/index.html --presets=@babel/preset-react,@babel/preset-env",
     "minify": "npx html-minifier-terser dist/index.html -o dist/index.html --collapse-whitespace --remove-comments --minify-js true --minify-css true",
-    "build": "npm run build:css && npm run replace-cdn && npm run minify"
+    "build": "npm run build:css && npm run replace-cdn && npm run build:babel && npm run minify"
   },
   "devDependencies": {
+    "@babel/cli": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "tailwindcss": "^3.4.0",
     "html-minifier-terser": "^7.2.0"
   }

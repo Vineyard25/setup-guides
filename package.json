@@ -1,0 +1,12 @@
+{
+  "name": "v25-tech-setup-checklist",
+  "private": true,
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css --minify",
+    "build:html": "npx html-minifier-terser index.html -o dist/index.html --collapse-whitespace --remove-comments --minify-js true --minify-css true"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "html-minifier-terser": "^7.2.0"
+  }
+}

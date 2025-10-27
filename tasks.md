@@ -5,7 +5,6 @@
 
 ## Setting up the stage
 **Time: 15 mins**
-
 - [ ] Check the [rota](https://vineyard25.churchsuite.com/my/rotas/all) together
 - [ ] Move TVs into place
 - [ ] Pull out speakers to form "stage" corners
@@ -26,6 +25,8 @@
 > - Protect hearing – be ready to mute at any moment
 > - Minimise distractions – create a smooth worship experience
 
+> Remember, line check is all about making sure everything's plugged in correctly... sound check is making sure it sounds great out the speakers!
+
 ## Getting started
 **Time: 5 mins**
 - [ ] Check/change batteries & put gear on a laptop stand
@@ -36,9 +37,6 @@
      
 ## Line Check
 **Time: 15 mins**
-
-> Line check is not about getting sound out of the main speakers and making it sound good; it's simply about ensuring you are getting signal into every channel correctly, and at the right level.
-
 - [ ] Remind band to not put IEMs in until after line check is complete
   > This is because you're changing channel gains, which will affect what goes to the IEMs
 - [ ] Load preset "Reset"
@@ -49,9 +47,6 @@
 
 ## Sound Check
 **Time: 25 mins**
-
-> Now comes the fun part! Sound check is where your job is to "make them sound good" out of the main speakers.
-
 - [ ] Grab a microphone so you can talk to the band, and ensure it is being sent to all in-ears
 - [ ] Tell the band it's now okay to put in their in-ears
 - [ ] Un-mute DCAs (last iPad tab) and set to 0dB
@@ -62,7 +57,8 @@
     > ⚠️ Changing gain/EQ affects in-ears - warn band before making significant changes!
 
 ## Getting ready for the service
-- [ ] Play the [Pre-service Playlist](https://open.spotify.com/playlist/6eFHoqPnNc89xkq8eM78Bj) either on your mobile (bluetooth) or via the laptop (ask the visuals person)
+**Time: 15 mins**
+- [ ] 10:40 - Play the [Pre-service Playlist](https://open.spotify.com/playlist/6eFHoqPnNc89xkq8eM78Bj) either from your mobile (bluetooth) or laptop (ask the visuals person)
 - [ ] 10:45 - Make sure the preacher has their microphone setup properly and knows how to use it (power + mute)
 - [ ] 10:55 - Be ready for announcements via host microphone (slightly quieten music behind)
 - [ ] 11:00 - Gradually fade the music out when host starts opening

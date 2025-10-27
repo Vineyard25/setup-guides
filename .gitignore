@@ -1,0 +1,60 @@
+# =========================
+# Node & Dependencies
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# =========================
+# Build Outputs
+# =========================
+dist/
+build/
+.cache/
+.tmp/
+
+# =========================
+# System Files
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# =========================
+# IDE / Editor Junk
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Logs / Coverage
+# =========================
+logs/
+*.log
+coverage/
+*.lcov
+
+# =========================
+# OS / Misc
+# =========================
+*.swp
+*.lock
+*.bak
+*.tmp
+*.orig
+*.rej

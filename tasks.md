@@ -5,7 +5,7 @@
 
 ## Set Up the Stage
 
-- [ ] Move speakers [into position](https://tech.vineyard25.org/assets/images/stage_empty.jpg)
+- [ ] Move speakers [into position](https://tech.vineyard25.org/assets/stage_empty.jpg)
 - [ ] Check speaker settings
   - [ ] Top speaker
   - [ ] Bottom speaker
@@ -80,9 +80,9 @@
 ## Screens
 
 - [ ] Plug in AirTame pebbles
-  - [ ] "Big Screen" pebble - HDMI into cupboard [switcher](https://tech.vineyard25.org/assets/images/hdmi-switcher.jpg) + USB power
-  - [ ] Non-labeled pebble - USB & HDMI into [side screen](https://tech.vineyard25.org/assets/images/airtame-sidescreen.jpg)
-- [ ] Turn on TVs and check [AirTame launch screen](https://tech.vineyard25.org/assets/images/airtame-launch-screen.jpg) appears
+  - [ ] "Big Screen" pebble - HDMI into cupboard [switcher](https://tech.vineyard25.org/assets/hdmi-switcher.jpg) + USB power
+  - [ ] Non-labeled pebble - USB & HDMI into [side screen](https://tech.vineyard25.org/assets/airtame-sidescreen.jpg)
+- [ ] Turn on TVs and check [AirTame launch screen](https://tech.vineyard25.org/assets/airtame-launch-screen.jpg) appears
 
 ## Balcony Setup
 
@@ -98,42 +98,42 @@
 
 - [ ] Turn on laptop & connect to Wi-Fi: V25 Screens
   > *Need both ethernet (internet) AND Wi-Fi (screens)*
-- [ ] Open [AirTame app](https://tech.vineyard25.org/assets/images/airtamelogo.jpg) → connect both screens
-- [ ] Right-click desktop → open [Display Settings](https://tech.vineyard25.org/assets/images/desktop-right-click.jpg)
-- [ ] On [ATEM box](https://tech.vineyard25.org/assets/images/atembuttons.png): key = OFF, input = 2
+- [ ] Open [AirTame app](https://tech.vineyard25.org/assets/airtamelogo.jpg) → connect both screens
+- [ ] Right-click desktop → open [Display Settings](https://tech.vineyard25.org/assets/desktop-right-click.jpg)
+- [ ] On [ATEM box](https://tech.vineyard25.org/assets/atembuttons.png): key = OFF, input = 2
 
 ## ProPresenter
 
-- [ ] Open [ProPresenter](https://tech.vineyard25.org/assets/images/propresenter.png)
-- [ ] Screens → [Configure Screens](https://tech.vineyard25.org/assets/images/configscreens.png)
-- [ ] Select Screen & Atem → change [output settings](https://tech.vineyard25.org/assets/images/screensetup.png)
+- [ ] Open [ProPresenter](https://tech.vineyard25.org/assets/propresenter.png)
+- [ ] Screens → [Configure Screens](https://tech.vineyard25.org/assets/configscreens.png)
+- [ ] Select Screen & Atem → change [output settings](https://tech.vineyard25.org/assets/screensetup.png)
 
 ## Slides & Worship Set
 
 - [ ] Get teacher's PowerPoint (OneDrive or USB)
-- [ ] File → Import → [PowerPoint](https://tech.vineyard25.org/assets/images/importslides.png)
-- [ ] Use Ctrl+F to search and [drag songs into playlist](https://tech.vineyard25.org/assets/images/addsong2.png)
+- [ ] File → Import → [PowerPoint](https://tech.vineyard25.org/assets/importslides.png)
+- [ ] Use Ctrl+F to search and [drag songs into playlist](https://tech.vineyard25.org/assets/addsong2.png)
 - [ ] Confirm worship set with worship leader
 
 ## Livestream: YouTube
 
 - [ ] Go to [YouTube Studio](http://studio.youtube.com)
-- [ ] Confirm logged into [Vineyard25 account](https://tech.vineyard25.org/assets/images/youtube-login.png)
-- [ ] [Create → Go Live](https://tech.vineyard25.org/assets/images/youtube-golive.png)
+- [ ] Confirm logged into [Vineyard25 account](https://tech.vineyard25.org/assets/youtube-login.png)
+- [ ] [Create → Go Live](https://tech.vineyard25.org/assets/youtube-golive.png)
 - [ ] Delete any "upcoming" videos
-- [ ] Click Stream in [side menu](https://tech.vineyard25.org/assets/images/youtube-stream-panel.png)
-- [ ] On [ATEM box](https://tech.vineyard25.org/assets/images/atembuttons.png): switch to ON AIR (red light)
-- [ ] Click [Edit](https://tech.vineyard25.org/assets/images/youtube-stream2.png)
+- [ ] Click Stream in [side menu](https://tech.vineyard25.org/assets/youtube-stream-panel.png)
+- [ ] On [ATEM box](https://tech.vineyard25.org/assets/atembuttons.png): switch to ON AIR (red light)
+- [ ] Click [Edit](https://tech.vineyard25.org/assets/youtube-stream2.png)
   - [ ] Title: Vineyard25 Service (today's date)
   - [ ] Visibility: Unlisted, leave description blank
-- [ ] Click [Share](https://tech.vineyard25.org/assets/images/youtube-stream3.png) and copy the link
+- [ ] Click [Share](https://tech.vineyard25.org/assets/youtube-stream3.png) and copy the link
 
 ## Livestream: Church Platform
 
 - [ ] Go to [LiveStream Admin](https://live.wokinghamvineyard.org/admin/services)
-- [ ] Click Edit content for [today's service](https://tech.vineyard25.org/assets/images/livestream-services.png)
-- [ ] Paste YouTube link in [Video → URL field](https://tech.vineyard25.org/assets/images/livestream-url.png)
-- [ ] Scroll down → Deselect all → [Save](https://tech.vineyard25.org/assets/images/livestream-save.png)
+- [ ] Click Edit content for [today's service](https://tech.vineyard25.org/assets/livestream-services.png)
+- [ ] Paste YouTube link in [Video → URL field](https://tech.vineyard25.org/assets/livestream-url.png)
+- [ ] Scroll down → Deselect all → [Save](https://tech.vineyard25.org/assets/livestream-save.png)
 
 ## Creche (Downstairs)
 
@@ -144,6 +144,6 @@
 
 ## During Church
 
-- [ ] Before worship: [ATEM](https://tech.vineyard25.org/assets/images/atembuttons.png) key = ON, input = 1
+- [ ] Before worship: [ATEM](https://tech.vineyard25.org/assets/atembuttons.png) key = ON, input = 1
 - [ ] For talk: key = OFF (stay on input 1 if no slides)
 - [ ] For ministry: turn ON AIR → OFF

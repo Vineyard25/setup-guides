@@ -1,4 +1,4 @@
-# Build and deploy static content to GitHub Pages
+# 🪄 Build and deploy static site to GitHub Pages
 name: Build and Deploy to Pages
 
 on:
@@ -19,29 +19,30 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Set up Node
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build Tailwind & Minify HTML
+      - name: Generate guide index
+        run: npm run make:guides-index
+
+      - name: Build project
         run: |
           mkdir -p dist
           npm run build
-          cp tasks.md dist/tasks.md
+          cp -r guides dist/guides
           cp -r assets dist/assets
 
-      - name: Generate guide index
-        run: node scripts/make-index.mjs
-
-      - name: Upload artifact
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist

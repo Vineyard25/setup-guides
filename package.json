@@ -8,9 +8,13 @@
     "build:babel": "npx babel dist/app.jsx --out-file dist/app.js --presets=@babel/preset-react,@babel/preset-env",
     "inject-js": "sed '/<script type=\"text\\/babel\">/,/<\\/script>/d' dist/index.html | sed 's|</body>|  <script src=\"./app.js\"></script>\\n</body>|' > dist/index.tmp && mv dist/index.tmp dist/index.html",
     "minify": "npx html-minifier-terser dist/index.html -o dist/index.html --collapse-whitespace --remove-comments --minify-js true --minify-css true",
+
     "build": "npm run build:css && npm run replace-cdn && npm run extract-jsx && npm run build:babel && npm run inject-js && npm run minify",
+
     "minify:images": "node scripts/minify-images.mjs",
-    "dev": "npx live-server --watch=index.html,tasks.md"
+    "make:guides-index": "node scripts/make-guides-index.mjs",
+
+    "dev": "npm run make:guides-index && npx live-server --watch=index.html,guides --port=8080"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.0",

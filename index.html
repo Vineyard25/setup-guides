@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width,initial-scale=1,viewport-fit=cover"
     />
-    <title>Tech Setup Checklist · Vineyard25 @ Edgbarrow</title>
+    <title>Setup Checklist · Vineyard25 @ Edgbarrow</title>
 
     <!-- React / Babel / Tailwind -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -136,12 +136,68 @@
     <script type="text/babel">
       const { useState, useEffect, useMemo } = React;
 
-      // --- PARSER FIXES ---
+      async function fetchGuideList() {
+        try {
+          const res = await fetch("./guides/index.json");
+          if (!res.ok) throw new Error("index.json missing");
+          return await res.json();
+        } catch {
+          console.warn("⚠️ Could not load guide list; using fallback");
+          return [{ slug: "placeholder", title: "placeholder" }];
+        }
+      }
+
+      function parseFrontmatter(md) {
+        const match = md.match(/^---([\s\S]*?)---/);
+        if (!match) return {};
+        const block = match[1].trim();
+        const data = {};
+        block.split("\n").forEach(line => {
+          const [key, ...rest] = line.split(":");
+          if (!key || !rest.length) return;
+          const value = rest.join(":").trim();
+          if (key === "roles" || key === "roleEmojis") {
+            data[key] = value.split(",").map(v => v.trim());
+          } else data[key] = value;
+        });
+        return data;
+      }
+
+      function HomeScreen({ guides, setSlug }) {
+        return (
+          <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 
+                          flex flex-col items-center justify-center text-white px-6 py-12 text-center">
+            <h1 className="text-4xl sm:text-5xl font-extrabold mb-20">
+              What team are you on today?
+            </h1>
+
+            <div className="flex flex-wrap justify-center gap-8">
+              {guides.map((g, i) => (
+                <button
+                  key={i}
+                  onClick={() => setSlug(g.slug)}
+                  className="w-52 h-40 rounded-2xl flex flex-col items-center justify-center
+                             text-center border border-white/20 shadow-lg backdrop-blur-sm
+                             bg-gradient-to-br from-grape-500/20 to-ocean-500/20
+                             hover:from-grape-400/30 hover:to-ocean-400/30
+                             hover:scale-[1.05] active:scale-[0.97]
+                             transition-all duration-200"
+                >
+                  <h2 className="text-2xl font-bold">{g.title}</h2>
+                  <p className="text-gray-300 mt-2">View guide</p>
+                </button>
+              ))}
+            </div>
+          </div>
+
+        );
+      }
+
       function parseMarkdown(md) {
         const sections = [];
         let currentSection = null;
         let currentSubsection = null;
-        let currentRole = "both"; // default role is now "both"
+        let currentRole = "all";
         let currentTime = "";
         let currentDescription = "";
         let currentPriorities = [];
@@ -284,7 +340,7 @@
               sections.push(currentSection);
               currentSection = null;
             }
-            currentRole = "both";
+            currentRole = "all";
             currentTime = "";
             currentDescription = "";
             currentPriorities = [];
@@ -406,35 +462,49 @@
         );
       };
 
-      const AVChecklist = () => {
+      const AVChecklist = ({ slug, setSlug }) => {
         const [expandedSections, setExpandedSections] = useState({});
         const [checkedItems, setCheckedItems] = useState({});
-        const [activeRole, setActiveRole] = useState("sound");
+        const [activeRole, setActiveRole] = useState(null);
         const [lightboxImage, setLightboxImage] = useState(null);
         const footerRef = React.useRef(null);
         const [isSticky, setIsSticky] = useState(true);
         const [CONTENT, setCONTENT] = useState(null);
 
         useEffect(() => {
-          fetch("./tasks.md")
-            .then((res) => res.text())
-            .then((text) => setCONTENT(text))
-            .catch((err) => {
-              console.error("Failed to load tasks.md", err);
-              setCONTENT("# Error loading checklist");
-            });
+          fetch(`./guides/${slug}.md`)
+            .then(res => res.text())
+            .then(text => {
+              const frontmatter = parseFrontmatter(text);
+              const body = text.replace(/^---[\s\S]+?---/, "").trim();
+              setCONTENT({ frontmatter, body });
+            })
+            .catch(err => console.error("Failed to load tasks.md", err));
         }, []);
+
+
+        useEffect(() => {
+          if (CONTENT?.frontmatter?.teamName) {
+            document.title = `${CONTENT.frontmatter.teamName} Setup Checklist · Vineyard25 @ Edgbarrow`;
+          }
+        }, [CONTENT]);
+
+        useEffect(() => {
+          if (!activeRole && CONTENT?.frontmatter?.roles?.length > 0) {
+            setActiveRole(CONTENT.frontmatter.roles[0].toLowerCase());
+          }
+        }, [CONTENT]);
 
         const sections = useMemo(() => {
           if (!CONTENT) return [];
-          return parseMarkdown(CONTENT);
+          return parseMarkdown(CONTENT.body);
         }, [CONTENT]);
 
         function getVisibleSections(roleFilter = activeRole) {
           return sections.filter(
             (section) =>
               section.role === roleFilter ||
-              section.role === "both"
+              section.role === "all"
           );
         }
 
@@ -481,33 +551,26 @@
           }));
         }
 
-        function roleStyles(role) {
-          if (role === "sound") {
-            return {
-              gradient: "from-grape-400 to-grape-500",
-              bg: "bg-grape-50",
-              border: "border-grape-300",
-              text: "text-grape-700",
-              ring: "ring-grape-200/50",
-            };
-          }
-          if (role === "visuals") {
-            return {
-              gradient: "from-ocean-400 to-ocean-500",
-              bg: "bg-ocean-50",
-              border: "border-ocean-300",
-              text: "text-ocean-700",
-              ring: "ring-ocean-200/50",
-            };
-          }
-          // "both" style
-          return {
-            gradient: "from-amber-400 to-amber-500",
-            bg: "bg-amber-50",
-            border: "border-amber-300",
-            text: "text-amber-700",
-            ring: "ring-amber-200/50",
-          };
+        function roleStyles(index) {
+          const colors = [
+            { gradient: "from-amber-400 to-amber-500", border: "border-amber-400", roleText: "text-amber-500", text: "text-amber-300" },
+            { gradient: "from-grape-400 to-grape-500", border: "border-grape-400", roleText: "text-grape-500", text: "text-grape-300" },
+            { gradient: "from-ocean-400 to-ocean-500", border: "border-ocean-400", roleText: "text-ocean-500", text: "text-ocean-300" },
+          ];
+          return colors[index % colors.length];
+        }
+
+        function getRoleIndex(role, roles = []) {
+          if (!role) return 0; // no role = amber (index 0)
+          const normalized = role.toLowerCase();
+
+          // Treat "all" / "both" specially
+          if (normalized === "all" || normalized === "both") return 0;
+
+          // Lookup by order in frontmatter
+          const idx = roles.findIndex(r => r.toLowerCase() === normalized);
+          // Shift by +1 because index 0 is reserved for "all"
+          return idx >= 0 ? idx + 1 : 0;
         }
 
         function renderItem(item, isSubItem = false) {
@@ -656,7 +719,8 @@
           const totalCount = allIds.length;
           const complete = totalCount > 0 && checkedCount === totalCount;
 
-          const styles = roleStyles(parentRole);
+          const roleIndex = getRoleIndex(parentRole, CONTENT?.frontmatter?.roles || []);
+          const styles = roleStyles(roleIndex);
 
           return (
             <section className="bg-white/10 rounded-lg text-white transition-all duration-300">
@@ -723,28 +787,15 @@
         }
 
         function SectionHeaderCard({ section, isFirst }) {
-          const styles = roleStyles(section.role);
 
-          const textColor =
-            section.role === "both"
-              ? "text-amber-300"
-              : section.role === "sound"
-              ? "text-grape-300"
-              : section.role === "visuals"
-              ? "text-ocean-300"
-              : "text-gray-800";
+          const roleIndex = getRoleIndex(section.role, CONTENT?.frontmatter?.roles || []);
+          const styles = roleStyles(roleIndex);
+          const textColor = styles.text;
+          const borderColor = styles.border;
 
-          const borderColor =
-            section.role === "both"
-              ? "border-amber-400"
-              : section.role === "sound"
-              ? "border-grape-400"
-              : "border-ocean-400";
 
           return (
             <header className="rounded-2xl overflow-hidden bg-transparent">
-              <div className={`h-1 w-full bg-transparent`} />
-
               <div className="py-3 px-4 space-y-4">
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   {/* Title */}
@@ -803,7 +854,22 @@
         return (
           <div className="relative flex min-h-screen flex-col">
 
-            <div className="border-t-8 border-transparent sticky top-0 z-50"
+          {setSlug && (
+            <button
+              onClick={() => setSlug(null)}
+              className="fixed z-50 top-6 left-6 flex items-center gap-2 rounded-xl 
+                         bg-gradient-to-r from-ocean-500 to-grape-500 px-4 py-2 text-white font-semibold
+                         shadow-lg shadow-black/30 backdrop-blur-sm
+                         hover:from-ocean-400 hover:to-grape-400 hover:scale-[1.03]
+                         active:scale-[0.97] transition-all duration-200"
+            >
+              <span className="text-lg">←</span>
+              <span>Back to Guides</span>
+            </button>
+          )}
+
+
+            <div className="border-t-8 border-transparent sticky top-0 z-40"
               style={{
                 borderImage: "linear-gradient(to right, #9b5de5, #00bbf9, #fee440) 1",
               }}
@@ -813,50 +879,43 @@
               <header className="relative w-full bg-white overflow-hidden transition-all animate-fade-in">
                 <div className="relative mx-auto max-w-2xl px-6 py-36 text-center">
                   <h2 className="text-5xl font-extrabold text-gray-900">
-                    Tech made{" "}
                     <span className="bg-gradient-to-r from-grape-500 via-ocean-400 to-amber-400 bg-clip-text text-transparent">
-                      simple
-                    </span>
+                      {(CONTENT?.frontmatter?.teamName || "Team")}{" "}
+                    </span> made simple
                   </h2>
                   <p className="mt-6 text-gray-600 text-xl leading-relaxed mx-auto">
                     Choose your role below, then tick off each step as you go.
                   </p>
-                  <div className="flex items-center justify-center gap-2 transition-all duration-300 mt-6">
-                    <button
-                      onClick={() => setActiveRole("sound")}
-                      className={`rounded-xl border-2 font-semibold px-4 py-1.5 transition-all ${
-                        activeRole === "sound"
-                          ? "border-grape-400 bg-white text-grape-700 shadow-sm"
-                          : "border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
-                      }`}
-                    >
-                      🎵 I'm on sound
-                    </button>
+                  <div className="flex items-center justify-center gap-2 flex-wrap transition-all duration-300 mt-6">
+                    {CONTENT?.frontmatter?.roles?.map((role, i) => {
+                      const emoji = CONTENT?.frontmatter?.roleEmojis?.[i] || "🧩";
+                      const isActive = activeRole === role.toLowerCase();
+                      const styles = roleStyles(i + 1);
 
-                    <button
-                      onClick={() => setActiveRole("visuals")}
-                      className={`rounded-xl border-2 font-semibold px-4 py-1.5 transition-all ${
-                        activeRole === "visuals"
-                          ? "border-ocean-400 bg-white text-ocean-700 shadow-sm"
-                          : "border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
-                      }`}
-                    >
-                      👨‍💻 I'm on visuals
-                    </button>
+                      return (
+                        <button
+                          key={role}
+                          onClick={() => setActiveRole(role.toLowerCase())}
+                          className={`rounded-xl border-2 font-semibold px-4 py-1.5 transition-all ${
+                            isActive
+                              ? `${styles.border} ${styles.roleText} bg-white shadow-sm`
+                              : "border-gray-300 bg-white text-gray-700 hover:bg-gray-50"
+                          }`}
+                        >
+                          {emoji} I'm on {role}
+                        </button>
+                      );
+                    })}
                   </div>
+
                 </div>
               </header>
 
               <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-12 space-y-6 animate-fade-in-slow">
                 <div className="space-y-12">
                   {getVisibleSections().map((section, i) => {
-                    const styles = roleStyles(section.role);
-                    const borderColor =
-                      section.role === "both"
-                        ? "border-amber-400"
-                        : section.role === "sound"
-                        ? "border-grape-400"
-                        : "border-ocean-400";
+                    const roleIndex = getRoleIndex(section.role, CONTENT?.frontmatter?.roles || []);
+                    const borderColor = roleStyles(roleIndex).border;
 
                     return (
                       <div
@@ -930,7 +989,7 @@
                           Your role
                         </div>
                         <div className="font-bold text-gray-900 text-lg">
-                          {activeRole === "sound" ? "Sound" : "Visuals"}
+                          {activeRole || ""}
                         </div>
                       </div>
 
@@ -966,7 +1025,25 @@
         );
       };
 
-      ReactDOM.render(<AVChecklist />, document.getElementById("root"));
+      function App() {
+        const [guides, setGuides] = useState([]);
+        const [slug, setSlug] = useState(null);
+
+        useEffect(() => {
+          const path = window.location.pathname.replace(/^\//, "");
+          setSlug(path || null);
+        }, []);
+
+        useEffect(() => {
+          fetchGuideList().then(setGuides);
+        }, []);
+
+        if (!slug) return <HomeScreen guides={guides} setSlug={setSlug} />;
+        return <AVChecklist slug={slug} setSlug={setSlug} />;
+
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
     </script>
   </body>
 </html>

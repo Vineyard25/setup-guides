@@ -1,5 +1,12 @@
+---
+teamName: Tech
+roles: sound, visuals
+roleEmojis: 🎵, 👨‍💻
+---
+
+
 # 📦 Stage Setup
-**Time: 20mins** | **Role: both**
+**Time: 20mins** | **Role: all**
 
 > All tech team should work together to get these tasks done quickly.
 

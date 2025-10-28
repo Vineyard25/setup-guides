@@ -38,6 +38,9 @@ jobs:
           cp tasks.md dist/tasks.md
           cp -r assets dist/assets
 
+      - name: Generate guide index
+        run: node scripts/make-index.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -660,7 +660,7 @@
 
                 <div className="flex items-center gap-2">
                   <p className="text-xs text-white/70 font-medium">
-                    {open ? "Tap to collapse" : "Tap to expand"}
+                    {open ? "Hide details" : "Show details"}
                   </p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -668,7 +668,7 @@
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
-                    className={`w-4 h-4 text-white transition-transform duration-300 ${
+                    className={`w-5 h-5 text-white transition-transform duration-300 ${
                       open ? "rotate-180" : ""
                     }`}
                   >
@@ -923,16 +923,14 @@
             )}
 
             <footer className="relative w-full bg-gray-50 border-t border-gray-200 text-center text-sm text-gray-600 py-8">
-              <p className="font-semibold text-gray-700 mb-1">
-                © {new Date().getFullYear()} Vineyard25. All rights reserved.
-              </p>
+              <p class="font-semibold mb-2">Built with ❤️ by Vineyard25</p>
               <p>
-                Built with ❤️ by Vineyard25 · Having issues?{" "}
+                Having issues? {" "}
                 <a
                   href="mailto:tech@vineyard25.org"
                   className="font-semibold text-ocean-600 hover:underline"
                 >
-                  tech@vineyard25.org
+                  Get in touch
                 </a>
               </p>
             </footer>

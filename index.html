@@ -200,8 +200,20 @@
             if (i > 0 && lines[i - 1].trim().startsWith("- [ ]")) {
               const lastItem = currentSubsection?.items?.[currentSubsection.items.length - 1];
               if (lastItem) lastItem.note = text.replace(/^\*|\*$/g, "").trim();
-            } else {
-              // Otherwise, treat it as a section-level quote
+            }
+
+            // If it's a note directly after a subsection heading
+            else if (currentSubsection && !currentSubsection.description && lines[i - 1].trim().startsWith("## ")) {
+              currentSubsection.description = text;
+            }
+
+            // If we're inside a subsection (and not just after a header), attach to subsection
+            else if (currentSubsection && !lines[i - 1].trim().startsWith("- [ ]")) {
+              currentSubsection.description = (currentSubsection.description || "") + " " + text;
+            }
+
+            // Otherwise, attach to the section
+            else {
               if (text.startsWith("**Your Priorities:**")) {
                 // handled separately
               } else if (text.startsWith("- ")) {
@@ -218,6 +230,7 @@
 
             continue;
           }
+
 
           // Subsection (## ...)
           if (line.startsWith("## ")) {
@@ -676,12 +689,19 @@
 
               {open && (
                 <div
-                  className="mt-2 rounded-lg bg-white shadow-lg ring-1 ring-black/5 px-4 pb-4 pt-3"
+                  className="mt-2 rounded-lg bg-white shadow-lg ring-1 ring-black/5 px-4 pb-4 pt-3 space-y-3"
                   style={{ animation: "slide-up 0.25s ease-out 1" }}
                 >
+                  {subsection.description && (
+                    <p className="text-gray-600 italic leading-relaxed">
+                      {subsection.description}
+                    </p>
+                  )}
+
                   {subsection.items.map((item) => renderItem(item))}
                 </div>
               )}
+
             </section>
           );
         }

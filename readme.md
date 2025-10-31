@@ -4,7 +4,7 @@ This is a simple web app for viewing and completing **team setup guides** on Sun
 
 The app automatically lists available guides on the homepage and loads them dynamically — no rebuild needed.
 
-Hosted on **GitHub Pages**.
+Publically available at https://guides.vineyard25.org and hosted on **GitHub Pages**.
 
 ---
 

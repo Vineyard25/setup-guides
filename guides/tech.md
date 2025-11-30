@@ -105,10 +105,10 @@ roleEmojis: 🎵, 👨‍💻
 - [ ] Set up, turn on and plug in the laptop, monitor, and camera to the back of the rack
 - [ ] Connect laptop to Wi-Fi: *V25 Screens*
 - [ ] Downstairs
-  - [ ] Inside the wooden cupboard, [plug in Airtame](https://tech.vineyard25.org/assets/hdmi-switcher.jpg)
+  - [ ] Inside the wooden cupboard, [plug in Airtame](./assets/hdmi-switcher.jpg)
   - [ ] Turn on main and both side TVs (remotes are on the cupboard)
-  - [ ] Confirm [Airtame launch screen](https://tech.vineyard25.org/assets/airtame-launch-screen.jpg) is visible (change HDMI input if not)
-- [ ] Open [Airtame app](https://tech.vineyard25.org/assets/airtamelogo.jpg) → connect both screens
+  - [ ] Confirm [Airtame launch screen](./assets/airtame-launch-screen.jpg) is visible (change HDMI input if not)
+- [ ] Open [Airtame app](./assets/airtamelogo.jpg) → connect both screens
 - [ ] Right-click the desktop → *Display Settings*
   - [ ] Click *Identify* → confirm *three different numbers* appear on: Main TV, Laptop screen, Livestream monitor *(order doesn’t matter)*
   - [ ] If any number appears *twice*, Windows hasn’t recognised one display → *Swap the HDMI cables* at the back of the laptop  
@@ -116,32 +116,32 @@ roleEmojis: 🎵, 👨‍💻
 
 
 ## 5. ProPresenter Setup
-- [ ] Open [ProPresenter](https://tech.vineyard25.org/assets/propresenter.png)
-- [ ] Screens → [Configure Screens](https://tech.vineyard25.org/assets/configscreens.png)
-- [ ] Select Screen & ATEM → update [output settings](https://tech.vineyard25.org/assets/screensetup.png)
+- [ ] Open [ProPresenter](./assets/propresenter.png)
+- [ ] Screens → [Configure Screens](./assets/configscreens.png)
+- [ ] Select Screen & ATEM → update [output settings](./assets/screensetup.png)
 - [ ] Import teaching PowerPoint (OneDrive or USB)  
   > File → Import → PowerPoint
-- [ ] Use Ctrl + F to find and [drag songs into playlist](https://tech.vineyard25.org/assets/addsong2.png)
+- [ ] Use Ctrl + F to find and [drag songs into playlist](./assets/addsong2.png)
 - [ ] Confirm worship set with the worship leader
 
 ## 6. Livestream Setup
-- [ ] On [ATEM box](https://tech.vineyard25.org/assets/atembuttons.png): Key = OFF, Input = 2
+- [ ] On [ATEM box](./assets/atembuttons.png): Key = OFF, Input = 2
 
 - [ ] YouTube
   - [ ] Go to [YouTube Studio](http://studio.youtube.com)
-  - [ ] Confirm login to [Vineyard25 account](https://tech.vineyard25.org/assets/youtube-login.png)
-  - [ ] [Create → Go Live](https://tech.vineyard25.org/assets/youtube-golive.png)
+  - [ ] Confirm login to [Vineyard25 account](./assets/youtube-login.png)
+  - [ ] [Create → Go Live](./assets/youtube-golive.png)
   - [ ] Delete any “upcoming” videos
-  - [ ] Click **Stream** in [side menu](https://tech.vineyard25.org/assets/youtube-stream-panel.png)
-  - [ ] On [ATEM box](https://tech.vineyard25.org/assets/atembuttons.png): switch to **ON AIR** (red light)
-  - [ ] [Edit title](https://tech.vineyard25.org/assets/youtube-stream2.png) with today’s date and set visibility to *Unlisted*
-  - [ ] [Share](https://tech.vineyard25.org/assets/youtube-stream3.png) → copy the stream link
+  - [ ] Click **Stream** in [side menu](./assets/youtube-stream-panel.png)
+  - [ ] On [ATEM box](./assets/atembuttons.png): switch to **ON AIR** (red light)
+  - [ ] [Edit title](./assets/youtube-stream2.png) with today’s date and set visibility to *Unlisted*
+  - [ ] [Share](./assets/youtube-stream3.png) → copy the stream link
 
 - [ ] Website
   - [ ] Go to [LiveStream Admin](https://live.wokinghamvineyard.org/admin/services)
   - [ ] Edit today’s service entry
-  - [ ] Paste YouTube link into [Video → URL field](https://tech.vineyard25.org/assets/livestream-url.png)
-  - [ ] Deselect all unnecessary options → [Save](https://tech.vineyard25.org/assets/livestream-save.png)
+  - [ ] Paste YouTube link into [Video → URL field](./assets/livestream-url.png)
+  - [ ] Deselect all unnecessary options → [Save](./assets/livestream-save.png)
 
 ## 7. Crèche Setup 
 > Access stream via YouTube Studio, not live website!
@@ -150,7 +150,7 @@ roleEmojis: 🎵, 👨‍💻
 - [ ] Open YouTube Studio → find and play the livestream 
 
 ## 8. ATEM settings during the service
-- [ ] Regularly check the gain level on the monitor - if it peaks red then turn down the [gain](https://tech.vineyard25.org/assets/atem-gain-controls.png)
+- [ ] Regularly check the gain level on the monitor - if it peaks red then turn down the [gain](./assets/atem-gain-controls.png)
 - [ ] Before worship
   - [ ] ATEM Key = ON, Input = 1
 - [ ] After worship / During talk

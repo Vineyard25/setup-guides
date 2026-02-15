@@ -4,27 +4,29 @@ roles: sound, visuals
 roleEmojis: 🎵, 👨‍💻
 ---
 
-
 # 📦 Stage Setup
+
 **Time: 20mins** | **Role: all**
 
 > All tech team should work together to get these tasks done quickly.
 
 ## 1. Stage Layout
+
 **Time: 10 mins**
+
 - [ ] Check the [rota](https://vineyard25.churchsuite.com/my/rotas/all) together
 - [ ] Move gear out from under-stairs cupboard for access
 - [ ] Setup speakers
   - [ ] Pull out speakers to form "stage" corners
   - [ ] Check speaker settings (top and bottom)
-- [ ] Move TVs into place
+- [ ] Move TVs into place (2x side screens + stage screen in corner)
 - [ ] Lay out both rugs (drums + worship leader)
 
 ## 2. Power and Cables
+
 **Time: 10 mins**
+
 - [ ] Run power extension cables
-  - [ ] Left, middle, and right on stage
-  - [ ] For the side TV
 - [ ] Set up microphone stands
 - [ ] Run XLRs & DI boxes for instruments and mics
 - [ ] Set up preaching stand
@@ -32,26 +34,30 @@ roleEmojis: 🎵, 👨‍💻
 ---
 
 # 🎵 Sound Setup
+
 **Time: 1 hour** | **Role: sound**
 
 > **Your Priorities:**
+>
 > - Protect hearing – be ready to mute at any moment
 > - Minimise distractions – create a smooth worship experience
 
 ## 3. Startup
+
 **Time: 5 mins**
 
 - [ ] Get some tunes going for setup teams
-  - [ ] Connect to Bluetooth (Logitech Adapter)
-  - [ ] Play whatever you like, but remember it's a church building 😉
-- [ ] Check & change batteries
+  - [ ] Connect to Bluetooth (Logitech Adapter) or via laptop if it's set up
+  - [ ] Play whatever you like until 10:30, but remember it's a church building 😉
+- [ ] Change batteries and check for signal
   - [ ] Wireless mics (2x vocals, 1x host)
   - [ ] Teaching headset mic
   - [ ] Laptop clicker
   - [ ] 5x In-ear packs (IEMs)
-  - [ ] Put gear out on large flat laptop stand
+  - [ ] Put wireless gear on large flat laptop stand for self-service
 
 ## 4. Line Check
+
 **Time: 15 mins**
 
 > Purpose: make sure every input is connected and producing signal before mixing.
@@ -59,13 +65,17 @@ roleEmojis: 🎵, 👨‍💻
 - [ ] Remind band to not put IEMs in until after line check is complete
   > This is because you're changing channel gains, which will affect what goes to the IEMs
 - [ ] Load preset "Reset"
-- [ ] For each instrument
-  - [ ] Adjust the gain so it's in the low-orange (red is too high, green is ok too)
-  > If there's limited/no signal, check the following: the instrument is producing signal, cables from instrument through to box all OK, DI boxes have power and are not reducing gain, channel mute isn't active, a high gate has not been added by accident.
+- [ ] Line check instruments one by one
+  - [ ] Ask band member to play/sing their loudest
+  - [ ] Adjust the gain so it's green/orange (red is too high)
+    > If there's limited/no signal, check the following: the instrument is producing signal, cables from instrument through to box all OK, DI boxes have power and are not reducing gain, channel mute isn't active, a high gate has not been added by accident.
 
 ## 5. Sound Check
+
 **Time: 25 mins**
+
 > ⚠️ Warning! All gain and EQ changes are heard in band members' in-ears - be sure to warn the band before making significant changes!
+
 - [ ] Grab a microphone so you can talk to the band, and ensure it is being sent to all in-ears
 - [ ] Tell the band it's now okay to put in their in-ears
 - [ ] Un-mute DCAs (last iPad tab) and set to 0dB
@@ -77,7 +87,9 @@ roleEmojis: 🎵, 👨‍💻
   - [ ] Dynamics – don't touch gate or compression unless you know what you're doing
 
 ## 6. Pre-Service Readiness
+
 **Time: 15 mins**
+
 - [ ] 10:40 - Play the [Pre-service Playlist](https://open.spotify.com/playlist/6eFHoqPnNc89xkq8eM78Bj) either from your mobile (bluetooth) or laptop (ask the visuals person)
 - [ ] 10:45 - Make sure the preacher has their microphone setup properly and knows how to use it (power + mute)
 - [ ] 10:55 - Be ready for announcements via host microphone (slightly quieten music behind)
@@ -88,43 +100,48 @@ roleEmojis: 🎵, 👨‍💻
 ---
 
 # 👨‍💻 Visuals Setup
+
 **Time: 1 hour** | **Role: visuals**
 
 > **Your Priorities:**
+>
 > - Minimise distractions — create a smooth worship experience
 > - Serve both rooms — in-person and online
 
 ## 3. Balcony Setup
-- [ ] Carry monitor and cable box upstairs
-- [ ] Arrange desks in an L-shape and move rack out from classroom
+
+- [ ] Arrange balcony desks in an L-shape
+- [ ] Move gear out from classroom cupboard
 - [ ] Connect the rack to power and ethernet (replace school PC's cable)
 - [ ] Connect downstairs cable to the rack
-  > This enables in-ear monitors and wireless microphones
+  > In-ear monitors and wireless microphones won't work until this is done
 
 ## 4. Screens Setup
+
 - [ ] Set up, turn on and plug in the laptop, monitor, and camera to the back of the rack
 - [ ] Connect laptop to Wi-Fi: *V25 Screens*
 - [ ] Downstairs
-  - [ ] Inside the wooden cupboard, [plug in Airtame](./assets/hdmi-switcher.jpg)
-  - [ ] Turn on main and both side TVs (remotes are on the cupboard)
-  - [ ] Confirm [Airtame launch screen](./assets/airtame-launch-screen.jpg) is visible (change HDMI input if not)
+  > Check ALL cables are plugged in correctly if there's any issues. You can also plug the airtame directly into the stage/side screen to check its receiving signal.
+  - [ ] Turn on TVs (main, side TVs, stage screen)
+  - [ ] Inside the wooden cupboard, press the switcher button so AirTame shows on screens
 - [ ] Open [Airtame app](./assets/airtamelogo.jpg) → connect both screens
 - [ ] Right-click the desktop → *Display Settings*
   - [ ] Click *Identify* → confirm *three different numbers* appear on: Main TV, Laptop screen, Livestream monitor *(order doesn’t matter)*
-  - [ ] If any number appears *twice*, Windows hasn’t recognised one display → *Swap the HDMI cables* at the back of the laptop  
+  - [ ] If any number appears *twice*, Windows hasn’t recognised one display → *Swap the HDMI cables* at the back of the laptop
   - [ ] Repeat the *Identify* test until all three screens show unique numbers
 
-
 ## 5. ProPresenter Setup
+
 - [ ] Open [ProPresenter](./assets/propresenter.png)
 - [ ] Screens → [Configure Screens](./assets/configscreens.png)
 - [ ] Select Screen & ATEM → update [output settings](./assets/screensetup.png)
-- [ ] Import teaching PowerPoint (OneDrive or USB)  
+- [ ] Import teaching PowerPoint (OneDrive or USB)
   > File → Import → PowerPoint
 - [ ] Use Ctrl + F to find and [drag songs into playlist](./assets/addsong2.png)
 - [ ] Confirm worship set with the worship leader
 
 ## 6. Livestream Setup
+
 - [ ] On [ATEM box](./assets/atembuttons.png): Key = OFF, Input = 2
 
 - [ ] YouTube
@@ -143,13 +160,16 @@ roleEmojis: 🎵, 👨‍💻
   - [ ] Paste YouTube link into [Video → URL field](./assets/livestream-url.png)
   - [ ] Deselect all unnecessary options → [Save](./assets/livestream-save.png)
 
-## 7. Crèche Setup 
+## 7. Crèche Setup
+
 > Access stream via YouTube Studio, not live website!
+
 - [ ] Set up speaker in corner and plug into PC
 - [ ] Log in to PC (details in Tech WhatsApp)
-- [ ] Open YouTube Studio → find and play the livestream 
+- [ ] Open YouTube Studio → find and play the livestream
 
 ## 8. ATEM settings during the service
+
 - [ ] Regularly check the gain level on the monitor - if it peaks red then turn down the [gain](./assets/atem-gain-controls.png)
 - [ ] Before worship
   - [ ] ATEM Key = ON, Input = 1
